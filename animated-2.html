@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONISVE WEB DESIGN</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    position: z;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.banner{
+
+    position: relative;
+    width:100%;
+    height:100vh;
+    background:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.25;
+}
+
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content h2{
+    color:chartreuse;
+    font-size:30px;
+}
+
+.banner .content h1{
+    color:violet;
+    font-size: 50px;
+}
+.banner .content h1:hover{
+    color: black;
+}
+
+.banner .content h2:hover{
+    color: yellow;
+}
+
+
+.banner  .logos{
+
+color:chartreuse;
+font-style: italic;
+font-size: 27px;
+transition: background .2s;
+}
+
+.banner  .logos:hover{
+color: white;
+}
+
+
+.banner .content p{
+    color: black;
+    font-size: 18px;
+    font-weight:bold;
+    font-style:italic;
+
+}
+
+
+
+.banner header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+.banner header .logo{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.search-icon input{
+    height: 100%;
+    width: 200px;
+    border:none;
+    outline:none;
+    padding: 0 10px;
+    color:darkblue;
+    font-size: 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+ .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gold;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-icon .icon:hover{
+    background: red;
+}
+
+
+.search-icon .icon span{
+    color:indigo;
+    font-size: 18px;
+}
+
+ .search-icon .icon:hover{
+     background:darkblue;
+ }
+ .search-icon .icon span{
+     color:darkmagenta;
+     font-size: 18px;
+ }
+ 
+
+
+.banner header .logo:hover{
+    color: yellow;
+}
+
+.about{
+    position: relative;
+    width:100%;
+    display: flex;
+    background: yellow;
+}
+
+.about .contentBx{
+    background: yellow;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+
+.about .imgBx{
+    background:url("/assets/zomato.png");
+    width:50%;
+    background-size: cover;
+    background-position: center;
+}
+.services{
+    background: springgreen;
+    padding: 200px;
+    text-align: center;
+}
+
+.services .heading{
+    font-size: 30px;
+    font-weight: 800;
+    color:black;
+}
+
+.services .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services  .container .serviceBx{
+    position: relative;
+    width:350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.services .container .serviceBx img{
+    display: flexbox;
+    box-shadow: 1px 1px 10px yellow;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    margin-bottom: 10px; 
+}
+
+.services .container .serviceBx img:hover{
+    box-shadow: 1px 1px 10px black;
+    cursor: pointer;
+
+}
+
+.services .container .serviceBx h2{
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color:brown;
+}
+
+.technology{
+    background:tomato;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technology .contentBx{
+    max-width: 800px;
+}
+
+.technology .imgBx{
+    max-width:850px;
+}
+
+.technology .imgBx img{
+    max-width: 100%;
+}
+
+.client{
+    background:cyan;
+    padding: 100px;
+    text-align: center;
+}
+
+.client .imgBx{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 40px;
+}
+
+.client .imgBx img{
+    max-width:200px;
+    margin:20px;
+    opacity: 0.50;
+    cursor: pointer;
+}
+.client .imgBx img:hover{
+    opacity:1;
+}
+
+.testimonials{
+    position: relative;
+    padding: 100px;
+    background:chocolate;
+    text-align: center;
+}
+
+.testimonials .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonials .container .contentBx{
+    background: white;
+    padding: 60px 50px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    box-shadow: 10px 30px 40px yellow;
+    transition: transform 0.2s;
+    display: flexbox;
+    overflow:hidden;
+}
+
+
+.testimonials .container .contentBx:hover{
+    transform:scale3d(90deg);
+    box-shadow: 1px 10px 10px hotpink;
+    cursor: pointer;
+    
+}
+
+
+.testimonials .container .contentBx{
+    font-style:italic;
+}
+
+.testimonials .container .contentBx h3{
+    width:100%;
+    text-align: end;
+    font-weight: 700;
+    color: yellow;
+}
+
+.contact{
+    padding: 100px;
+    background: darkorchid;
+    text-align: center;
+}
+ .imgBx2{
+     background:url("assets/last\ zomato.jpeg");
+     background-size: cover;
+     background-position: center;
+     width:50%;
+ }
+  .form .inputBx
+  {
+      margin-bottom: 40px;
+  }
+
+  .form .inputBx input{
+      width: 100%;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      outline:none;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 300;
+      color: darkblue;
+      border-bottom: 2px solid hotpink;
+
+  }
+
+  .form .inputBx input::placeholder{
+      color: black;
+  }
+
+  .form .inputs textarea{
+    width: 100%;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      outline:none;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 300;
+      min-height: 150px;
+      color: darkblue;
+      border-bottom: 2px solid hotpink;
+
+  }
+  .form .inputBx textarea::placeholder{
+      color: black;
+  }
+
+  .form .inputBx input[type="submit"]
+  {
+      width:150px;
+      background:black;
+      color: yellow;
+      cursor: pointer;
+      font-weight: 800;
+  }
+.footer{
+    background: darkorange;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: deeppink;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .text i{
+    size: 2.4rem;
+    font-weight: 700;
+    color: black;
+}
+.menu-toggle{
+      color: white;
+      font-size: 1.8rem;
+      right: 2rem;
+      cursor: pointer;
+      transform: translateY(-50%);
+      position:absolute;
+  }
+
+  .menu-toggle:hover{
+      color:chartreuse;
+  }
+
+
+@media (max-width:991px)
+ {
+     .banner{
+         padding: 50px;
+     }
+     .banner header{
+         padding: 20px 50px;
+     }
+     .banner .content h2{
+         font-size: 36px;
+     }
+     .banner .content p{
+         font-size: 10px;
+     }
+     .about{
+         flex-direction: column;
+     }
+     .about .contentBx,
+         .about .imgBx{
+             width: 100%;
+             padding: 50px;
+             min-height: 400px;
+             text-align: center;
+         }
+         .services{
+             padding: 50px;
+         }
+         .services .container{
+             justify-content: center;
+             margin-top: 20px;
+         }
+         .services .container .serviceBx{
+             margin:20px;
+             width: 300px;
+             height: 350px;
+         }
+         .technology{
+             padding: 50px;
+             padding-top: 300px;
+             justify-content: center;
+             flex-direction: column;
+         }
+         .technology .imgBx{
+             margin-top: 40px;
+             max-width: 250px;
+         }
+         .client{
+             padding: 50px;
+         }
+         .client .imgBx{
+             justify-content: center;
+         }
+         .testimonials{
+             padding: 50px;
+            max-width: 550px;
+            margin-bottom: 40px;
+         }
+         .testimonials .contentBx{
+             padding: 60px 40px;
+         }
+         .testimonials .contentBx:last-child{
+             margin-bottom: 0px;
+         }
+
+         .contact{
+             padding: 50px;
+         }
+
+         .footer{
+             padding: 20px 50px;
+             flex-direction: column-reverse;
+             text-align: center;
+         }
+         .footer ul{
+             margin-bottom: 20px;
+         }
+
+     }
+ 
+
+
+
+
+
+</style>
+<body>
+    <!-----Banner---->
+    <div class="banner">
+        <header>
+            <a href="#" class="logo">ZOMATO</a>
+            <a href="#" class="logos">HOME</a> 
+            <a href="#" class="logos">CONTACTS</a>  
+            <a href="#" class="logos">SERVICES</a>
+            <a href="#" class="logos">FOODS</a>
+            <a href="#" class="logos">PRICING</a>
+             <button type="class">SIGN UP</button>
+             <button type="class">LOGIN</button>
+
+
+             <div class="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            
+        </header>
+        <img src="/assets/tomataoes.jpeg" width="1550" height="650">
+        <div class="content" data-0-top="opacity:0; left:100px;" data-200-top="opacity:3; left:0px;">
+            <h1>A DREAM COMPANY</h1>
+            <h2>EVERY MEAL MATTERS</h2>
+            <p>A dream restaurant for millions of people acrosss india.It has achived so much love and appreciation from millions of people and its juts sailing its boat</p>
+            <p>It contains a myraid kind of tasty ,delicious and mouth-watering dishes which will leave in splits</p>
+            <br>
+        
+            <div  class="search-icon">
+                <input type="search" placeholder="Search" class="search-box">
+                <span class="fa fa-search"></span>
+            </div>
+
+        </div> 
+    </div>
+    <!-----About Us-->
+
+    <section class="about">
+        <div class="contentBx">
+        <h2 class="heading" data-center-center="opacity:1;left:0px;" data-0-bottom="opacity:0;left:500px;">ABOUT US</h2>
+      <p class="text" data-center-center="opacity:1; left:0px;" data-0-bottom="opacity:0;left:-500px;">ZOMATO is a food startup founded by graduates of IIM's in 2008.It was founded by 3 college friends who were very studious, deligent and hardworking guys who grind their ass out slog for 2 years ,thinking abvout the startegy to impkent ,launch and peocced further and finally the long wait of their hardwork tasted them sweet and they won the national award for bringing about the most influential asnd the most loved  startup ever launched
+        It has total of 5000+ employees working in it.It has a office in gurgaon which is well-strtured and a multi-storeyed buliding comprises of 9 flooors whisch is tip-totch and busy due to immense preesure of ordering from allover the world
+        It started as Fooddiebay and was established in July 2008 by Two IIT delhi alumus Deepinder Goyal and Pankaj Chaddah
+        It was launched 12 years ago on July 2008, it has grown from a home project to one of the largest food aggregators in the world
+        It provides information,menusand user-reviwes of restaurants as wellas  food delivcewry options from partner restaurants in select cities
+      </p>
+        </div>
+        </div>
+        <div class="imgBx" data-center-center="opacity:1;right:0px;" data-0-bottom="opacity:0;left:200px;">
+
+        </div>
+    </section>
+
+    <!----Services---->
+
+    <section class="services">
+        <h2 class="heading" data-center-center="opacity:2;left:0px;" data-0-bottom="opacity:0;left:500px;">OUR BEST FOODS</h2>
+       <p class="text" data-center-center="opacity:1; right:0px;"  data-0-bottom="opacity:0;right:500px;">The most famous and the most emient foods available are creamy pastries which will make your day ,spicy salads which are lipo-smacking and pulse-pounding ,the crunchy and crispy burgers
+           and the last the chicken salads which is itself a most popular dish.
+       </p>
+        <div class="container">
+            <div class="servicesBx" data-center-center="opacity:1;left:0;"  data-0-bottom="opacity:0;left:-400px;">
+            <div>
+                    <img src="assets/pastries.jpeg">
+                    <h2>CREAMY PASTRIES</h2>
+                </div>
+            </div>
+    <div class="serviceBx" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+    <div>
+                    <img src="assets/green  salad.jpeg">
+                    <h2>TASTY AND SPICY SALADS</h2>
+                </div>
+            </div>
+            <div class="serviceBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+            <div>
+                   <img src="assets/yummmy burgers.jpeg">
+                   <h2>CRISPY AND CRUNCHY BURGERS</h2>
+                </div>
+            </div>
+            <div class="serviceBx" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+            <div>
+                <img src="/assets/foods.jpeg">
+                <h2>CHICKEN SALADS</h2>
+                </div>
+            </div>
+    </section>
+
+    <!----Technology---->
+
+    <section class="technology">
+        <div class="contentBx"  data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+            <h2>OUR FOUNDERS</h2>
+            <p>When there so much hype about the company who can forget their parents i mean their founders Pankaj Chaddah and Deepinder Goyal</p>
+            <p>These two were actually college friends in IIT Delhi who both planned ,executed and made a startegy to bring out something unique and different</p>
+            <p>They slogged grind their asss out  and finally theirr hardwork paid off and they won the national award</p>
+        </div>
+        <div class="imgBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;bottom:-400px;">
+            <img src="/assets/founders-1.jpg">
+        </div>
+    </section>
+
+    <!-----Client----->
+
+    <section class="client">
+        <h2 class="heading" data-center-center="opacity:1;top:0;" data-0-bottom="opacity:0;top:-100px;">OUR CLIENTS</h2>
+        <p class="text" data-center-center="opacity:1;bottom:0;"   data-0-bottom="opacity:0;bottom:-100px;"> Our clients which remain in touch with us are facebook ,instagram twitter and google. You can get all the information regarding our startup ,these four platforms play a major role
+            in Social Media Marketing and publicity of the startup
+        </p>
+        <div class="imgBx">
+            <img src="assets/facebooks.png" data-center-center="top:0;" data-0-bottom="top:100px;">
+            <img src="assets/amazon logo.png" data-center-center="top:0;" data-0-bottom="top:150px;">
+            <img src="assets/twitter.png" data-center-center="top:0;" data-0-bottom="top:200px;">
+            <img src="/assets/google.png" data-center-center="top:0;" data-0-bottom="top:250px;">
+        </div>
+    </section>
+
+    <!-------Testimonials------>
+    <section class="testimonials">
+        <h2 class="heading">WHAT OUR PEOPLE SAYS</h2>
+        <div class="container">
+            <div class="contentBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+                <div>
+                    <p>Mind blowing taste ,awesome food service,managable cost it is like Heaven!!</p>
+                    <p>Also there are always many discounts available so iut is easy to order without any hesitation</p>
+                    <img src="assets/karol bagh.jpeg">
+                </div>
+            </div>
+            <div class="contentBx" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;">
+                <div>
+                    <p>It is an amazing startup has lots of varities of traditional foods its taste is offbeaten and unmatchable</p>
+                    <P>Just three words I Love It!!</P>
+                    <img src="assets/CP.jpeg">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!----Contact---->
+    <section class="contact">
+        <div data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+        <h2 class="heading">CONTACT US</h2>
+        <p class="text">Our headquarters are located in DLF phase Gurgaon ,Haryana.if you have any queries you can simply drop and email to us refarding and order issue ,delivery issue etc we will reach out to shortly</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="contentBx redbg">
+            <div class="form" data-center-center="opacity:1;left:0;"  data-0-bottom="opacity:0;left:-400px;">
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Full Name">
+                </div>
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Email Addres">
+                </div>
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Mobile no.">
+                </div>
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="City/location">
+                </div>
+                <div class="inputBx">
+                    <textarea area placeholder="Write your message here"></textarea>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </div>
+        </div>
+        <div class="imgBx2">
+
+        </div>
+    </section>
+
+    <!------Footer----->
+    <section class="footer">
+        <p class="text">Design & and Developed by Mr .Japneet Singh Nayyar</p>
+        <ul>
+            <p class="text">FOLLOW US ON</p>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+        <div class="contact-1">
+            <span><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 6731-385-722</span> &nbsp; &nbsp; &nbsp;
+            <span><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; info@japneetnayyar.com</span> &nbsp; &nbsp; &nbsp;
+
+    </section>
+
+<script src="assets/skrollr.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+
+    </script>
+    
+    
+    
+</body>
+</html>
